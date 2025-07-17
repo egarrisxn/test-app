@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@/components/theme-toggle";
+import ThemeToggle from "@/components/theme-toggle";
 import AuthForm from "@/components/auth/form";
 
 export default async function AuthPage() {
