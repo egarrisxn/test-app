@@ -3,11 +3,11 @@ import AuthForm from "@/components/auth/form";
 
 export default async function AuthPage() {
   return (
-    <div className='grid min-h-[100dvh] w-full max-w-screen place-items-center'>
+    <main className='grid min-h-dvh w-full place-items-center'>
       <div className='absolute top-4 right-4 z-10'>
         <ThemeToggle />
       </div>
       <AuthForm />
-    </div>
+    </main>
   );
 }

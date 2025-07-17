@@ -1,6 +1,6 @@
-import { Shield, LogOut } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
 import ThemeToggle from "@/components/theme-toggle";
+import LogoutButton from "@/components/admin/logout";
 
 export default function AdminNavbar() {
   return (
@@ -14,14 +14,7 @@ export default function AdminNavbar() {
             </h1>
           </div>
           <div className='flex md:gap-1 lg:gap-4'>
-            <Button
-              disabled
-              variant='outline'
-              className='flex items-center gap-2'
-            >
-              <LogOut className='size-4' />
-              Logout
-            </Button>
+            <LogoutButton />
             <ThemeToggle />
           </div>
         </div>

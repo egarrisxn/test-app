@@ -10,7 +10,6 @@ import type {
 //! LANDING PAGE
 
 export const landingNavigation = [
-  // { name: "Home", href: "#home" },
   { name: "Life Story", href: "#lifestory" },
   { name: "Photo Gallery", href: "#photos" },
   { name: "Guestbook", href: "#guestbook" },
