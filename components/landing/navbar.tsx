@@ -29,7 +29,7 @@ export default function LandingNavbar() {
       className='fixed top-0 z-50 w-full bg-transparent text-white transition-all'
     >
       <div className='mx-auto flex flex-row items-center justify-between p-4 lg:px-6'>
-        <section className='flex'>
+        <section className='flex items-center'>
           <Link
             className='tracking-snug text-lg font-bold lg:text-2xl 2xl:text-3xl'
             href='/'
