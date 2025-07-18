@@ -27,38 +27,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_DATA.title}`,
   },
   description: SITE_DATA.description,
-  applicationName: SITE_DATA.title,
   referrer: "origin-when-cross-origin",
-  creator: SITE_DATA.website,
-  keywords: [
-    "memories",
-    "memorial",
-    "tribute",
-    "obituary",
-    "funeral",
-    "rip",
-    "grandma",
-    "mother",
-    "teacher",
-    "patricia",
-    "penisten",
-  ],
-  openGraph: {
-    title: SITE_DATA.title,
-    description: SITE_DATA.description,
-    url: SITE_DATA.url,
-    siteName: SITE_DATA.title,
-    type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_DATA.title,
-    description: SITE_DATA.description,
-    creator: SITE_DATA.socialHandle,
-    site: SITE_DATA.socialHandle,
-  },
-  verification: {},
 };
 
 export const viewport: Viewport = {
@@ -75,9 +44,6 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning className='scroll-smooth' lang='en'>
-      <head>
-        <meta name='apple-mobile-web-app-title' content={SITE_DATA.title} />
-      </head>
       <body
         className={`${fontSans.variable} ${fontMono.variable} ${fontSerif.variable} font-sans antialiased`}
       >

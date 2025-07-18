@@ -1,24 +1,30 @@
-import { Shield } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/theme-toggle";
 import LogoutButton from "@/components/admin/logout";
 
 export default function AdminNavbar() {
   return (
-    <div className='border-b shadow-sm'>
-      <div className='container mx-auto p-4'>
-        <div className='flex items-center justify-between'>
-          <div className='flex items-center gap-3'>
-            <Shield className='size-8 text-blue-600' />
-            <h1 className='text-2xl font-bold text-gray-900'>
-              Admin Dashboard
-            </h1>
-          </div>
-          <div className='flex md:gap-1 lg:gap-4'>
+    <header className='bg-background w-full border-b shadow-sm'>
+      <div className='mx-auto flex flex-row items-center justify-between p-4 lg:px-6'>
+        <section>
+          <Link
+            className='tracking-snug text-lg font-bold lg:text-2xl'
+            href='/'
+          >
+            Memories of Patricia
+          </Link>
+        </section>
+        <section>
+          <nav className='flex flex-row items-center gap-0.5 lg:gap-3'>
+            <Link href='/' className='hidden items-center sm:flex'>
+              <Button variant='ghost'>Home</Button>
+            </Link>
             <LogoutButton />
             <ThemeToggle />
-          </div>
-        </div>
+          </nav>
+        </section>
       </div>
-    </div>
+    </header>
   );
 }
